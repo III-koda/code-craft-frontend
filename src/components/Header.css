@@ -1,0 +1,55 @@
+#headerBar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: var(--header-bar-h);
+    background-color: var(--extra-dark);
+    color: var(--yellow);
+    font-weight: bold;
+    text-align: left;
+}
+
+#logo {
+    margin: 5px 0 0 20px;
+    display: flex;
+    font-size: 30px;
+    flex-direction: column;
+}
+
+#description {
+    font-size: 12px;
+    font-weight: lighter;
+    color: gray;
+    margin-left: 5px;
+}
+
+#buttonsContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+#dropdownContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 470px;
+    margin: 17px 50px 10px 0px;
+}
+
+#runButton {
+    outline: 2px solid var(--light-blue);
+    background-color: var(--dark);
+    color: var(--yellow);
+    margin-top: 10px;
+    padding: 5px 20px 5px 20px;
+    margin: 12px 15px 12px 20px;
+    border-radius: 15px;
+    border-width: 0;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#runButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 7px #fff, 0 0 15px var(--light-blue);
+}

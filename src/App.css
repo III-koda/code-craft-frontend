@@ -1,0 +1,23 @@
+:root {
+  --yellow: #f5b433;
+  --light-blue: #8dc1df;
+  --dark: #1e1e1e;
+  --extra-dark: #050505;
+  --gray: #363636;
+  --light-gray: #aac8c8;
+  --header-bar-h: 60px;
+}
+
+#workspace {
+  position:fixed;
+  top: var(--header-bar-h); right: 0; bottom: 0; left: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+
+#outputPanel {
+  display: flex;
+  min-width: 15vw;
+  max-width: 80vw;
+}
