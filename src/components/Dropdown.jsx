@@ -24,7 +24,7 @@ class Dropdown extends React.Component {
                         onChange={this.onChangeEvent} 
                         style={{width:this.props.width}} >
                         {this.props.options.map(({ value, label }) => 
-                            <option value={value}>{label}</option>)}
+                            <option key={value} value={value}>{label}</option>)}
                 </select>
             </div>
         );

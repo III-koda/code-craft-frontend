@@ -14,10 +14,11 @@
   display: flex;
   flex-direction: row;
   width: 100vw;
+  background-color: blue;
 }
-
+/* 
 #outputPanel {
   display: flex;
   min-width: 15vw;
   max-width: 80vw;
-}
+} */
