@@ -1,6 +1,6 @@
 import axois from 'axios';
 
-const CODE_EXE_API_URL = 'http://127.0.0.1:5000/execute'
+const CODE_EXE_API_URL = 'https://code-craft-grso.onrender.com/execute'
 
 class CodeExecutionResult {
     constructor(stdout, stderr, exitCode) {
