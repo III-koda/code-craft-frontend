@@ -1,0 +1,17 @@
+name: Lint
+
+on: [push]
+
+jobs: # list of things to do
+  linting:
+    name: Linting # job name (unique id)
+    runs-on: ubuntu-latest # on which machine to run
+    steps: # list of steps
+      - name: Code Checkout
+        uses: actions/checkout@v2
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run ESLint
+        run: npm run eslint
