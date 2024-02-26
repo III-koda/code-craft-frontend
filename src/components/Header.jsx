@@ -39,8 +39,11 @@ class Header extends React.Component {
               onSelect={this.props.onLanguageChanged}
             />
           </div>
-          <button id="runButton" onClick={this.props.onRunButtonClicked}>
-            Run Code
+          <button
+            id="runButton"
+            className={this.props.isRunning ? "runButtonDuringRun" : "runButton"}
+            onClick={this.props.onRunButtonClicked}>
+            {this.props.isRunning ? "Stop" : "Run Code"}
           </button>
         </div>
       </header>

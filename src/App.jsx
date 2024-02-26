@@ -87,7 +87,14 @@ class App extends React.Component {
       theme: "ambiance",
       code: "",
       output: "",
+      isRunning: false,
     };
+  }
+
+  componentDidUpdate(_, prevState) {
+    if (this.state.isRunning !== prevState.isRunning) {
+      this.handleIsRunningStateChange();
+    }
   }
 
   onLanguageChanged = (language) => {
@@ -106,9 +113,20 @@ class App extends React.Component {
   };
 
   onRunButtonClicked = async () => {
+    this.setState({ isRunning: !this.state.isRunning });
+  };
+
+  handleIsRunningStateChange = async () => {
+    if (!this.state.isRunning) {
+      return;
+    }
+
     const result = await executeCode(this.state.language, this.state.code);
+    if (!this.state.isRunning) {
+      return; // return if the user stopped
+    }
     if (result == null) {
-      console.log("something went wrong");
+      NotificationManager.error("Some unexpected error occurred!");
       return;
     }
     if (result.timeout) {
@@ -116,7 +134,7 @@ class App extends React.Component {
       return;
     }
     const outputStr = result.exitCode === 0 ? result.stdout : result.stderr;
-    this.setState({ output: outputStr });
+    this.setState({ output: outputStr, isRunning: false });
   };
 
   render() {
@@ -135,6 +153,7 @@ class App extends React.Component {
           onLanguageChanged={this.onLanguageChanged}
           onThemeChanged={this.onThemeChanged}
           onRunButtonClicked={this.onRunButtonClicked}
+          isRunning={this.state.isRunning}
         />
 
         {/*Containing the code editor and the output panel*/}
