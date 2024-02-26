@@ -1,20 +1,20 @@
-import React from "react";
+import React from 'react'
 
-import Dropdown from "./Dropdown";
+import Dropdown from './Dropdown'
 
-import "./Header.css";
+import './Header.css'
 
 class Header extends React.Component {
-  constructor(props) {
-    super();
-    this.props = props;
+  constructor (props) {
+    super()
+    this.props = props
     this.state = {
       x: 0,
-      width: props.width,
-    };
+      width: props.width
+    }
   }
 
-  render() {
+  render () {
     return (
       <header id="headerBar">
         <div id="logo">
@@ -41,14 +41,14 @@ class Header extends React.Component {
           </div>
           <button
             id="runButton"
-            className={this.props.isRunning ? "runButtonDuringRun" : "runButton"}
+            className={this.props.isRunning ? 'runButtonDuringRun' : 'runButton'}
             onClick={this.props.onRunButtonClicked}>
-            {this.props.isRunning ? "Stop" : "Run Code"}
+            {this.props.isRunning ? 'Stop' : 'Run Code'}
           </button>
         </div>
       </header>
-    );
+    )
   }
 }
 
-export default Header;
+export default Header

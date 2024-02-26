@@ -7,10 +7,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "ace-builds": "^1.4.13",
-    "amd-loader": "0.0.8",
     "axios": "^1.6.1",
-    "brace": "^0.11.1",
-    "moment": "^2.29.1",
     "react": "^16.14.0",
     "react-ace-builds": "^7.4.1",
     "react-dom": "^16.14.0",
@@ -23,7 +20,10 @@
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "eslint": "npx eslint src --ext .jsx,.js",
+    "eslint:fix": "npx eslint src --ext .jsx,.js --fix",
+    "depcheck": "npx depcheck"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +46,12 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@types/ace": "0.0.47",
+    "depcheck": "^1.4.7",
     "typescript": "^3.4.4"
-  }
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
