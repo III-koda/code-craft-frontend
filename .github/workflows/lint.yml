@@ -1,11 +1,6 @@
 name: Lint
 
-on: # event list
-  pull_request: # on a pull request to each of these branches
-    branches:
-      - development
-      - staging
-      - production
+on: [push]
 
 jobs: # list of things to do
   linting:
