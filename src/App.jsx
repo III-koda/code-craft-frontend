@@ -131,6 +131,7 @@ class App extends React.Component {
     }
     if (result.timeout) {
       NotificationManager.error('Execution Time Out')
+      this.setState({ isRunning: false})
       return
     }
     const outputStr = result.exitCode === 0 ? result.stdout : result.stderr
