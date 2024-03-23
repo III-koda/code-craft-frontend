@@ -54,8 +54,8 @@ const themeOptions = [
   { value: 'chaos', label: 'Chaos' },
   { value: 'chrome', label: 'Chrome' },
   { value: 'clouds', label: 'Clouds' },
-  { value: 'cobalt', label: 'Cobalt' },
   { value: 'clouds_midnight', label: 'Clouds Midnight' },
+  { value: 'cobalt', label: 'Cobalt' },
   { value: 'dracula', label: 'Dracula' },
   { value: 'eclipse', label: 'Eclipse' },
   { value: 'github', label: 'Github' },
@@ -64,8 +64,8 @@ const themeOptions = [
   { value: 'merbivore_soft', label: 'Merbivore Soft' },
   { value: 'monokai', label: 'Monokai' },
   { value: 'one_dark', label: 'One Dark' },
-  { value: 'terminal', label: 'Terminal' },
-  { value: 'solarized_dark', label: 'Solarized Dark' }
+  { value: 'solarized_dark', label: 'Solarized Dark' },
+  { value: 'terminal', label: 'Terminal' }
 ]
 
 const languageOptions = [
