@@ -37,23 +37,31 @@ import 'ace-builds/src-noconflict/theme-chaos'
 import 'ace-builds/src-noconflict/theme-chrome'
 import 'ace-builds/src-noconflict/theme-clouds'
 import 'ace-builds/src-noconflict/theme-clouds_midnight'
+import 'ace-builds/src-min-noconflict/theme-cobalt'
 import 'ace-builds/src-noconflict/theme-dracula'
 import 'ace-builds/src-noconflict/theme-eclipse'
 import 'ace-builds/src-noconflict/theme-github'
+import 'ace-builds/src-noconflict/theme-github_dark'
+import 'ace-builds/src-noconflict/theme-gob'
+import 'ace-builds/src-noconflict/theme-merbivore_soft'
 import 'ace-builds/src-noconflict/theme-monokai'
 import 'ace-builds/src-noconflict/theme-one_dark'
-import 'ace-builds/src-noconflict/theme-terminal'
 import 'ace-builds/src-noconflict/theme-solarized_dark'
+import 'ace-builds/src-noconflict/theme-terminal'
 
 const themeOptions = [
   { value: 'ambiance', label: 'Ambiance' },
   { value: 'chaos', label: 'Chaos' },
   { value: 'chrome', label: 'Chrome' },
   { value: 'clouds', label: 'Clouds' },
+  { value: 'cobalt', label: 'Cobalt'},
   { value: 'clouds_midnight', label: 'Clouds Midnight' },
   { value: 'dracula', label: 'Dracula' },
   { value: 'eclipse', label: 'Eclipse' },
   { value: 'github', label: 'Github' },
+  { value: 'github_dark', label: 'Github Dark' },
+  { value: 'gob', label: 'Gob'},
+  { value: 'merbivore_soft', label: 'Merbivore Soft'},
   { value: 'monokai', label: 'Monokai' },
   { value: 'one_dark', label: 'One Dark' },
   { value: 'terminal', label: 'Terminal' },
