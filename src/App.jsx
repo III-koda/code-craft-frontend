@@ -31,7 +31,6 @@ import 'ace-builds/src-noconflict/mode-php'
 import 'ace-builds/src-noconflict/mode-python'
 import 'ace-builds/src-noconflict/mode-ruby'
 
-
 // import the themes
 import 'ace-builds/src-noconflict/theme-ambiance'
 import 'ace-builds/src-noconflict/theme-chaos'
