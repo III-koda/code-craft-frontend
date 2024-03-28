@@ -13,6 +13,7 @@ import {
   NotificationManager
 } from 'react-notifications'
 import 'react-notifications/lib/notifications.css'
+import HELLO_WORLD_CODE from './const/helloworld'
 
 // import ace editor features
 import 'ace-builds/src-noconflict/ace'
@@ -99,7 +100,8 @@ class App extends React.Component {
       language: 'c',
       aceLanguage: 'c_cpp',
       theme: 'ambiance',
-      code: '',
+      code: HELLO_WORLD_CODE.c,
+      codeCache: Object.assign({}, HELLO_WORLD_CODE),
       output: '',
       isRunning: false
     }
@@ -114,7 +116,9 @@ class App extends React.Component {
   onLanguageChanged = (language) => {
     this.setState({
       language,
-      aceLanguage: languageValueToAceLanguage[language]
+      aceLanguage: languageValueToAceLanguage[language],
+      code: this.state.codeCache[language],
+      codeCache: { ...this.state.codeCache, [this.state.language]: this.state.code }
     })
   }
 
