@@ -131,7 +131,10 @@ class App extends React.Component {
   }
 
   onRunButtonClicked = async () => {
-    this.setState({ isRunning: !this.state.isRunning })
+    this.setState({
+      isRunning: !this.state.isRunning,
+      output: 'Running...'
+    })
   }
 
   handleIsRunningStateChange = async () => {
