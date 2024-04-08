@@ -1,34 +1,38 @@
-const C_HELLO_WORLD = `#include<stdio.h>
+const C_HELLO_WORLD = `#include <stdio.h>
 
 int main()
 {
     printf("Hello world");
     return 0;
-}`
+}
+`
 
 const CS_HELLO_WORLD = `namespace HelloWorld
 {
-    class Hello {         
+    class Hello {
         static void Main(string[] args)
         {
             System.Console.WriteLine("Hello World!");
         }
     }
-}`
+}
+`
 
-const CPP_HELLO_WORLD = `#include<iostream>
+const CPP_HELLO_WORLD = `#include <iostream>
 using namespace std;
 
-int main(){
+int main() {
     cout << "Hello World" << endl;
     return 0;
-}`
+}
+`
 
 const JAVA_HELLO_WORLD = `class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!"); 
+        System.out.println("Hello, World!");
     }
-}`
+}
+`
 
 const JS_HELLO_WORLD = 'console.log("Hello World");'
 
@@ -36,11 +40,13 @@ const PERL_HELLO_WORLD = `use strict;
 use warnings;
 
 # Print function
-print("Hello World");`
+print("Hello World");
+`
 
 const PHP_HELLO_WORLD = `<?php
   echo "Hello World";
-?>`
+?>
+`
 
 const PYTHON_HELLO_WORLD = 'print("Hello World")'
 

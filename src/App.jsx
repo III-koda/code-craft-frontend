@@ -148,6 +148,7 @@ class App extends React.Component {
     }
     if (result == null) {
       NotificationManager.error('Some unexpected error occurred!')
+      this.setState({ isRunning: false })
       return
     }
     if (result.timeout) {
