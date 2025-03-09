@@ -7,6 +7,7 @@ import SplitPane from 'react-split-pane'
 // import AceEditor from 'react-ace';
 import Header from './components/Header'
 import OutputPanel from './components/OutputPanel'
+import { pingBackend } from './services/backendPing'
 import { executeCode } from './services/codeExecution'
 import {
   NotificationContainer,
@@ -105,6 +106,7 @@ class App extends React.Component {
       output: '',
       isRunning: false
     }
+    pingBackend() // Spin up the backend ahead of time
   }
 
   componentDidUpdate (_, prevState) {
